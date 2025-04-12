@@ -1,0 +1,124 @@
+form {
+    background-color: rgba(255, 255, 255, 0.05);
+    padding: 20px;
+    border-radius: 10px;
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+  .nav-link {
+    padding: 10px 20px;
+    text-decoration: none;
+    color: black;
+    transition: background-color 0.3s;
+  }
+  .social a {
+    margin: 0 13px;
+    border: none;
+    text-decoration: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    padding: 5px 20px;
+  }
+  
+  .social-icons img {
+    width: 30px; /* يمكنك تعديل الحجم كما تشاء */
+    height: 30px;
+  }
+  
+  .nav-link.active {
+    background-color: hsla(0, 0%, 100%, 0.848); 
+    color: white;
+  }
+  
+  input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+  }
+  
+  button {
+    background-color: #00bcd4;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #0097a7;
+  }
+  
+  .main-header {
+    background-color: rgba(0, 0, 0, 0.5);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    backdrop-filter: blur(8px);
+    box-shadow: 0 0 5px rgba(0,0,0,0.3);
+    padding: 10px 0;
+  }
+  
+  .header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 20px;
+  }
+  
+  .logo {
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: #00bcd4;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+  }
+  
+  .nav-links li a {
+    text-decoration: none;
+    color: white;
+    font-size: 0.95rem;
+    transition: 0.3s;
+    padding: 5px 8px;
+  }
+  
+  .nav-links li a:hover {
+    color: #00bcd4;
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .nav-links {
+      flex-direction: column;
+      position: absolute;
+      top: 55px;
+      right: 15px;
+      background-color: #1a1a1a;
+      padding: 10px;
+      border-radius: 10px;
+      display: none;
+    }
+  
+    .nav-links.active {
+      display: flex;
+    }
+  
+    .menu-toggle {
+      display: block;
+      font-size: 1.3rem;
+      cursor: pointer;
+      color: white;
+    }
+  }
+  
